@@ -25,7 +25,7 @@ i18n.configure({
   locales: ['en', 'ko', 'zh', 'ja', 'de'],
   directory: __dirname + '/locales',
   cookie: 'lang',
-  defaultLocale: 'en'
+  defaultLocale: 'ko' // 매번 필요 작업시 변경
 });
 
 app.use(i18n.init);

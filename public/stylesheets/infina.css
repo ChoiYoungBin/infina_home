@@ -1,0 +1,18 @@
+
+.under_line {
+  position: relative;
+}
+
+.under_line:after {
+  content: '';
+  width: 64px;
+  height: 1px;
+  display: block; 
+  position: absolute; 
+  margin-top: 1px; 
+  border-bottom: 2px solid #f00;
+}
+
+.back_image {
+  background-image: url("/assets/image/GettyImages-a10838093.jpg");
+}

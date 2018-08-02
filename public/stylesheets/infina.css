@@ -16,3 +16,7 @@
 .back_image {
   background-image: url("/assets/image/GettyImages-a10838093.jpg");
 }
+
+.margin_bottom {
+  margin-bottom: 50px;
+}

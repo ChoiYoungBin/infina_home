@@ -88,10 +88,10 @@
         <br>
         <br>
         <br>
-        <br>
+        <br><small>
         06160,<br>
         서울특별시 강남구 테헤란로419,<br>
-        17층 1704호 (강남파이낸스플라자)
+        17층 1704호 (강남파이낸스플라자)</small>
       </div>
     </header>
 
@@ -347,21 +347,21 @@
           
           <div class="col-4 col-lg-3">
             <img src="/assets/image/1.png" width="100%">
-            <b>안성현</b><br>
+            <b>안성현</b><br><small>
             대표이사 CEO<br>
-            서울대학교
+            서울대학교</small>
           </div>
           <div class="col-4 col-lg-3">
             <img src="/assets/image/2.png" width="100%">
-            <b>이 준</b><br>
+            <b>이 준</b><br><small>
             부사장 CEO<br>
-            서울대학교
+            서울대학교</small>
           </div>
           <div class="col-4 col-lg-3">
             <img src="/assets/image/3.png" width="100%">
-            <b>성명원</b><br>
+            <b>성명원</b><br><small>
             부사장 CFO<br>
-            성균관대학교
+            성균관대학교</small>
           </div>
         </div>
 
@@ -371,15 +371,15 @@
           
           <div class="col-4 col-lg-3">
             <img src="/assets/image/4.png" width="100%">
-            <b>최영빈</b><br>
+            <b>최영빈</b><br><small>
             부사장 CTO<br>
-            연세대학교
+            연세대학교</small>
           </div>
           <div class="col-4 col-lg-3">
             <img src="/assets/image/5.png" width="100%">
-            <b>정현우</b><br>
+            <b>정현우</b><br><small>
             중국 지사장<br>
-            중국 베이징대학교
+            중국 베이징대학교</small>
           </div>
         </div>
 
@@ -389,15 +389,15 @@
           
           <div class="col-4 col-lg-3">
             <img src="/assets/image/6.png" width="100%">
-            <b>박지윤</b><br>
+            <b>박지윤</b><br><small>
             경영전략 부장<br>
-            미국 UC Irvine
+            미국 UC Irvine</small>
           </div>
           <div class="col-4 col-lg-3">
             <img src="/assets/image/7.png" width="100%">
-            <b>박유리</b><br>
+            <b>박유리</b><br><small>
             조직문화 과장<br>
-            중국 랴오닝대학교
+            중국 랴오닝대학교</small>
           </div>
         </div>
 
@@ -422,17 +422,17 @@
 
           <div class="col-4 col-lg-3">
             <img src="/assets/image/8.png" width="100%" >
-            <b>임요한</b><br>
+            <b>임요한</b><br><small>
             수석연구원<br>
             독일의사 의학박사<br>
-            독일 Aachen University
+            독일 Aachen University</small>
           </div>
           <div class="col-4 col-lg-3">
             <img src="/assets/image/9.png" width="100%">
-            <b>김일봉</b><br>
+            <b>김일봉</b><br><small>
             수석연구원<br>
             중국약사 약학박사<br>
-            전남대학교
+            전남대학교</small>
           </div>
         </div>
 
@@ -442,24 +442,24 @@
 
           <div class="col-4 col-lg-3">
             <img src="/assets/image/10.png" width="100%">
-            <b>정민지</b><br>
+            <b>정민지</b><br><small>
             책임연구원<br>
             미국의사<br>
-            미국 Wake Forest University
+            미국 Wake Forest University</small>
           </div>
           <div class="col-4 col-lg-3">
             <img src="/assets/image/11.png" width="100%">
-            <b>강호정</b><br>
+            <b>강호정</b><br><small>
             책임연구원<br>
             중의사<br>
-            중국 남경중의약대학교
+            중국 남경중의약대학교</small>
           </div>
           <div class="col-4 col-lg-3">
             <img src="/assets/image/12.png" width="100%">
-            <b>이마가</b><br>
+            <b>이마가</b><br><small>
             책임연구원<br>
             의사(중국 서의)<br>
-            중국 복단대학교
+            중국 복단대학교</small>
           </div>
         </div>
 
@@ -468,8 +468,8 @@
 
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <!-- laboratory section -->
-    <section id="contact">
+    <!-- contact section --> 
+    <section id="contact" style="background-color:#e9ecef">
       <div class="jumbotron">
         <div class="container">
           <div class="row">
@@ -484,10 +484,14 @@
           <p>executive.office@infina.co.kr</p>
           02-2088-4929
         </div>
+
+        <div class="container" style="margin-top: 50px">
+          <div id="map" style="width:100%;height:400px;"></div>
+        </div>
       </div>
     </section>
 
-                      
+    
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
@@ -513,6 +517,18 @@
     <script src="/assets/scrolling/js/scrolling-nav.js"></script>
 
     <script src="/assets/js/infina.js"></script>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d3059280cb18acde7a735ba5f01cf4c2"></script>
+    <script>
+      var container = document.getElementById('map');
+      var options = {
+        center: new daum.maps.LatLng(37.505954, 127.052182),
+        level: 1
+      };
+  
+      var map = new daum.maps.Map(container, options);
+
+    </script>
 
   </body>
 </html>

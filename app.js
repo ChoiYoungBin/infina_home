@@ -51,6 +51,9 @@ app.get('/ko', function(req, res) {
   i18n.setLocale('ko');
   res.redirect('/main');
 });
+app.get('/', function(req, res) {
+  res.redirect('main.html')
+})
 
 // prepare server
 app.use('/js', express.static(__dirname + '/node_modules/bootstrap/dist/js')); // redirect bootstrap JS
@@ -58,7 +61,7 @@ app.use('/js', express.static(__dirname + '/node_modules/jquery/dist')); // redi
 app.use('/css', express.static(__dirname + '/node_modules/bootstrap/dist/css')); // redirect CSS bootstrap
 
 // use jade... router & view
-app.use('/', indexRouter);
+app.use('/index', indexRouter);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

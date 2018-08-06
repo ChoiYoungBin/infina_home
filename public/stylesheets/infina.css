@@ -14,7 +14,18 @@
 }
 
 .back_image {
+  background-position : center;
   background-image: url("/assets/image/GettyImages-a10838093.jpg");
+}
+
+.map_han_back_image {
+  background-position : center;
+  background-image: url("/assets/image/map_han.png");
+}
+
+.map_eng_back_image {
+  background-position : center;
+  background-image: url("/assets/image/map_eng.png");
 }
 
 .margin_bottom {

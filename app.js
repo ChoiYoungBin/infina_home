@@ -36,6 +36,12 @@ app.get('/main', function(req, res) {
   if( current_locale == 'ko') {
     res.redirect('/main/ko/index.html');
   }
+  if( current_locale == 'zh') {
+    res.redirect('/main/zh/index.html');
+  }
+  if( current_locale == 'de') {
+    res.redirect('/main/de/index.html');
+  }
   else {
     res.redirect('/main/en/index.html');
   }
@@ -47,8 +53,15 @@ app.get('/en', function(req, res) {
   res.redirect('/main');
 });
 app.get('/ko', function(req, res) {
-  // res.cookie('lang', 'ko');
   i18n.setLocale('ko');
+  res.redirect('/main');
+});
+app.get('/zh', function(req, res) {
+  i18n.setLocale('zh');
+  res.redirect('/main');
+});
+app.get('/de', function(req, res) {
+  i18n.setLocale('de');
   res.redirect('/main');
 });
 app.get('/', function(req, res) {

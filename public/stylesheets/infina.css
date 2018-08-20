@@ -28,6 +28,11 @@
   background-image: url("/assets/image/map_eng.png");
 }
 
+.map_chn_back_image {
+  background-position : center;
+  background-image: url("/assets/image/map_chn.png");
+}
+
 .margin_bottom {
   margin-bottom: 50px;
 }
